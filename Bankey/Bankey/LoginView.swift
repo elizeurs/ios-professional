@@ -46,13 +46,17 @@ extension LoginView {
     usernameTextField.placeholder = "Username"
     usernameTextField.delegate = self
     
+    dividerView.translatesAutoresizingMaskIntoConstraints = false
+    dividerView.backgroundColor = .secondarySystemFill
+    
     passwordTextField.translatesAutoresizingMaskIntoConstraints = false
     passwordTextField.placeholder = "Password"
     passwordTextField.isSecureTextEntry = true
     passwordTextField.delegate = self
+    passwordTextField.enablePasswordToggle()
     
-    dividerView.translatesAutoresizingMaskIntoConstraints = false
-    dividerView.backgroundColor = .secondarySystemFill
+    layer.cornerRadius = 5
+    clipsToBounds = true
   }
   
   func layout() {
@@ -71,8 +75,6 @@ extension LoginView {
     ])
     
     dividerView.heightAnchor.constraint(equalToConstant: 1).isActive = true
-    layer.cornerRadius = 5
-    clipsToBounds = true
   }
 }
 
