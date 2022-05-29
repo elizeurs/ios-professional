@@ -146,9 +146,9 @@
 			isa = PBXGroup;
 			children = (
 				751509A8281DDBD600157EEB /* AccountSummaryViewController.swift */,
+				751E0027283D946700F68060 /* AccountSummaryViewController+Networking.swift */,
 				75773C5128208C3C00A5FF4B /* Header */,
 				75773C5228208CE100A5FF4B /* Cells */,
-				751E0027283D946700F68060 /* AccountSummaryViewController+Networking.swift */,
 			);
 			name = AccountSummary;
 			sourceTree = "<group>";

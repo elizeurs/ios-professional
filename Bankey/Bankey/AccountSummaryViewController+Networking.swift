@@ -10,7 +10,7 @@ import UIKit
 
 enum NetworkError: Error {
   case serverError
-  case DecodingError
+  case decodingError
 }
 
 struct Profile: Codable {
@@ -35,11 +35,12 @@ extension AccountSummaryViewController {
           completion(.failure(.serverError))
           return
         }
-        do {let profile = try
-          JSONDecoder().decode(Profile.self, from: data)
+        
+        do {
+          let profile = try JSONDecoder().decode(Profile.self, from: data)
           completion(.success(profile))
         } catch {
-          completion(.failure(.DecodingError))
+          completion(.failure(.decodingError))
         }
       }
     }.resume()
@@ -51,12 +52,12 @@ struct Account: Codable {
   let type: AccountType
   let name: String
   let amount: Decimal
-  let createDateTime: Date
+  let createdDateTime: Date
 }
   
 extension AccountSummaryViewController {
   func fetchAccounts(forUserId userId: String, completion: @escaping(Result<[Account], NetworkError>) -> Void) {
-    let url = URL(string: "https://fierce-retreat-36855.herokuapp.com/bankey/profile/\(userId)/account")!
+    let url = URL(string: "https://fierce-retreat-36855.herokuapp.com/bankey/profile/\(userId)/accounts")!
     
     URLSession.shared.dataTask(with: url) { data, response, error in
       DispatchQueue.main.async {
@@ -66,13 +67,13 @@ extension AccountSummaryViewController {
         }
         
         do {
-          let decoder = try JSONDecoder()
+          let decoder = JSONDecoder()
           decoder.dateDecodingStrategy = .iso8601
           
           let accounts = try decoder.decode([Account].self, from: data)
           completion(.success(accounts))
         } catch {
-          completion(.failure(.DecodingError))
+          completion(.failure(.decodingError))
         }
       }
     }.resume()

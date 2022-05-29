@@ -53,6 +53,7 @@ extension AccountSummaryViewController {
   
   private func setupTableView() {
     tableView.backgroundColor = appColor
+    
     tableView.delegate = self
     tableView.dataSource = self
     
@@ -83,7 +84,7 @@ extension AccountSummaryViewController {
 
 extension AccountSummaryViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard !accounts.isEmpty else { return UITableViewCell() }
+    guard !accountCellViewModels.isEmpty else { return UITableViewCell() }
     
     let cell = tableView.dequeueReusableCell(withIdentifier: AccountSummaryCell.reuseID, for: indexPath) as! AccountSummaryCell
     let account = accountCellViewModels[indexPath.row]
@@ -97,7 +98,7 @@ extension AccountSummaryViewController: UITableViewDataSource {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 //    return games.count
-    return accounts.count
+    return accountCellViewModels.count
   }
 }
 
