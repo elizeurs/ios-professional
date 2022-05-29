@@ -14,6 +14,8 @@
 		750E2BAD27E7A703008801C1 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750E2BAC27E7A703008801C1 /* LoginView.swift */; };
 		751509A9281DDBD600157EEB /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751509A8281DDBD600157EEB /* AccountSummaryViewController.swift */; };
 		751E0028283D946700F68060 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751E0027283D946700F68060 /* AccountSummaryViewController+Networking.swift */; };
+		752B584128441D3C006D494C /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B584028441D3C006D494C /* ProfileTests.swift */; };
+		752B5843284421B6006D494C /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752B5842284421B6006D494C /* AccountTests.swift */; };
 		7531F1E62809F33100FF603B /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F1E52809F33100FF603B /* OnboardingContainerViewController.swift */; };
 		7531F1E8280A09AC00FF603B /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7531F1E7280A09AC00FF603B /* OnboardingViewController.swift */; };
 		7533B2FD2829CCE20034B182 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7533B2FC2829CCE20034B182 /* CurrencyFormatterTests.swift */; };
@@ -53,6 +55,8 @@
 		751509A8281DDBD600157EEB /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		751E0027283D946700F68060 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		752B0B0C282885A500B8B56A /* BankeyUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankeyUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		752B584028441D3C006D494C /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		752B5842284421B6006D494C /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		7531F1E52809F33100FF603B /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		7531F1E7280A09AC00FF603B /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		7533B2FC2829CCE20034B182 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
@@ -156,9 +160,27 @@
 		752B0B0D282885A500B8B56A /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				7533B2FC2829CCE20034B182 /* CurrencyFormatterTests.swift */,
+				752B583628441B5D006D494C /* AccountSummary */,
+				752B583728441B77006D494C /* Utils */,
 			);
 			path = BankeyUnitTests;
+			sourceTree = "<group>";
+		};
+		752B583628441B5D006D494C /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				752B584028441D3C006D494C /* ProfileTests.swift */,
+				752B5842284421B6006D494C /* AccountTests.swift */,
+			);
+			path = AccountSummary;
+			sourceTree = "<group>";
+		};
+		752B583728441B77006D494C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				7533B2FC2829CCE20034B182 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		7531F1E42809F29600FF603B /* Onboarding */ = {
@@ -338,6 +360,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7533B2FD2829CCE20034B182 /* CurrencyFormatterTests.swift in Sources */,
+				752B5843284421B6006D494C /* AccountTests.swift in Sources */,
+				752B584128441D3C006D494C /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
