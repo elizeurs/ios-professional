@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7518F5BE286A6281003BA3EC /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518F5BD286A6281003BA3EC /* PasswordCriteriaView.swift */; };
+		75AFD04F286D027800445D8B /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD04E286D027800445D8B /* PasswordStatusView.swift */; };
 		75B44B6B2853E10900140385 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B44B6A2853E10900140385 /* PasswordTextField.swift */; };
 		75F833752852B723004B73C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F833742852B723004B73C2 /* AppDelegate.swift */; };
 		75F833792852B723004B73C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F833782852B723004B73C2 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		7518F5BD286A6281003BA3EC /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
+		75AFD04E286D027800445D8B /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
 		75B44B6A2853E10900140385 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
 		75F833712852B723004B73C2 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F833742852B723004B73C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 			isa = PBXGroup;
 			children = (
 				7518F5BD286A6281003BA3EC /* PasswordCriteriaView.swift */,
+				75AFD04E286D027800445D8B /* PasswordStatusView.swift */,
 			);
 			path = PasswordStatusView;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				75F833792852B723004B73C2 /* ViewController.swift in Sources */,
 				75F833752852B723004B73C2 /* AppDelegate.swift in Sources */,
 				7518F5BE286A6281003BA3EC /* PasswordCriteriaView.swift in Sources */,
+				75AFD04F286D027800445D8B /* PasswordStatusView.swift in Sources */,
 				75B44B6B2853E10900140385 /* PasswordTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
