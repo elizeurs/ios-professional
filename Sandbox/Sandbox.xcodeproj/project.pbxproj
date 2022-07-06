@@ -7,31 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7518F5BE286A6281003BA3EC /* PasswordCriteriaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7518F5BD286A6281003BA3EC /* PasswordCriteriaView.swift */; };
-		754C156E2873A50200A25C89 /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754C156D2873A50200A25C89 /* PasswordCriteria.swift */; };
-		75AFD04F286D027800445D8B /* PasswordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75AFD04E286D027800445D8B /* PasswordStatusView.swift */; };
-		75B44B6B2853E10900140385 /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B44B6A2853E10900140385 /* PasswordTextField.swift */; };
-		75F833752852B723004B73C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F833742852B723004B73C2 /* AppDelegate.swift */; };
-		75F833792852B723004B73C2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F833782852B723004B73C2 /* ViewController.swift */; };
-		75F8337E2852B727004B73C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F8337D2852B727004B73C2 /* Assets.xcassets */; };
-		75F833812852B727004B73C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F8337F2852B727004B73C2 /* LaunchScreen.storyboard */; };
+		750B9974286FA31E00349BA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B9973286FA31E00349BA6 /* AppDelegate.swift */; };
+		750B9976286FA31E00349BA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B9975286FA31E00349BA6 /* SceneDelegate.swift */; };
+		750B9978286FA31E00349BA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750B9977286FA31E00349BA6 /* ViewController.swift */; };
+		750B997B286FA31E00349BA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B9979286FA31E00349BA6 /* Main.storyboard */; };
+		750B997D286FA32100349BA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 750B997C286FA32100349BA6 /* Assets.xcassets */; };
+		750B9980286FA32100349BA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 750B997E286FA32100349BA6 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7518F5BD286A6281003BA3EC /* PasswordCriteriaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaView.swift; sourceTree = "<group>"; };
-		754C156D2873A50200A25C89 /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
-		75AFD04E286D027800445D8B /* PasswordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusView.swift; sourceTree = "<group>"; };
-		75B44B6A2853E10900140385 /* PasswordTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
-		75F833712852B723004B73C2 /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		75F833742852B723004B73C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		75F833782852B723004B73C2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75F8337D2852B727004B73C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		75F833802852B727004B73C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		75F833822852B727004B73C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		750B9970286FA31E00349BA6 /* Sandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		750B9973286FA31E00349BA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		750B9975286FA31E00349BA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		750B9977286FA31E00349BA6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		750B997A286FA31E00349BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		750B997C286FA32100349BA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		750B997F286FA32100349BA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		750B9981286FA32100349BA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		75F8336E2852B723004B73C2 /* Frameworks */ = {
+		750B996D286FA31E00349BA6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,90 +37,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7518F5BC286A6252003BA3EC /* PasswordStatusView */ = {
+		750B9967286FA31E00349BA6 = {
 			isa = PBXGroup;
 			children = (
-				7518F5BD286A6281003BA3EC /* PasswordCriteriaView.swift */,
-				75AFD04E286D027800445D8B /* PasswordStatusView.swift */,
-				754C156D2873A50200A25C89 /* PasswordCriteria.swift */,
-			);
-			path = PasswordStatusView;
-			sourceTree = "<group>";
-		};
-		75F833682852B723004B73C2 = {
-			isa = PBXGroup;
-			children = (
-				75F833732852B723004B73C2 /* Password */,
-				75F833722852B723004B73C2 /* Products */,
+				750B9972286FA31E00349BA6 /* Sandbox */,
+				750B9971286FA31E00349BA6 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		75F833722852B723004B73C2 /* Products */ = {
+		750B9971286FA31E00349BA6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				75F833712852B723004B73C2 /* Password.app */,
+				750B9970286FA31E00349BA6 /* Sandbox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		75F833732852B723004B73C2 /* Password */ = {
+		750B9972286FA31E00349BA6 /* Sandbox */ = {
 			isa = PBXGroup;
 			children = (
-				75F833882852B862004B73C2 /* Files */,
-				75F833742852B723004B73C2 /* AppDelegate.swift */,
-				75F833782852B723004B73C2 /* ViewController.swift */,
-				75B44B6A2853E10900140385 /* PasswordTextField.swift */,
-				7518F5BC286A6252003BA3EC /* PasswordStatusView */,
+				750B9973286FA31E00349BA6 /* AppDelegate.swift */,
+				750B9975286FA31E00349BA6 /* SceneDelegate.swift */,
+				750B9977286FA31E00349BA6 /* ViewController.swift */,
+				750B9979286FA31E00349BA6 /* Main.storyboard */,
+				750B997C286FA32100349BA6 /* Assets.xcassets */,
+				750B997E286FA32100349BA6 /* LaunchScreen.storyboard */,
+				750B9981286FA32100349BA6 /* Info.plist */,
 			);
-			path = Password;
-			sourceTree = "<group>";
-		};
-		75F833882852B862004B73C2 /* Files */ = {
-			isa = PBXGroup;
-			children = (
-				75F8337D2852B727004B73C2 /* Assets.xcassets */,
-				75F8337F2852B727004B73C2 /* LaunchScreen.storyboard */,
-				75F833822852B727004B73C2 /* Info.plist */,
-			);
-			name = Files;
+			path = Sandbox;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		75F833702852B723004B73C2 /* Password */ = {
+		750B996F286FA31E00349BA6 /* Sandbox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75F833852852B727004B73C2 /* Build configuration list for PBXNativeTarget "Password" */;
+			buildConfigurationList = 750B9984286FA32100349BA6 /* Build configuration list for PBXNativeTarget "Sandbox" */;
 			buildPhases = (
-				75F8336D2852B723004B73C2 /* Sources */,
-				75F8336E2852B723004B73C2 /* Frameworks */,
-				75F8336F2852B723004B73C2 /* Resources */,
+				750B996C286FA31E00349BA6 /* Sources */,
+				750B996D286FA31E00349BA6 /* Frameworks */,
+				750B996E286FA31E00349BA6 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = Password;
-			productName = Password;
-			productReference = 75F833712852B723004B73C2 /* Password.app */;
+			name = Sandbox;
+			productName = Sandbox;
+			productReference = 750B9970286FA31E00349BA6 /* Sandbox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		75F833692852B723004B73C2 /* Project object */ = {
+		750B9968286FA31E00349BA6 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					75F833702852B723004B73C2 = {
+					750B996F286FA31E00349BA6 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 75F8336C2852B723004B73C2 /* Build configuration list for PBXProject "Password" */;
+			buildConfigurationList = 750B996B286FA31E00349BA6 /* Build configuration list for PBXProject "Sandbox" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,49 +110,55 @@
 				en,
 				Base,
 			);
-			mainGroup = 75F833682852B723004B73C2;
-			productRefGroup = 75F833722852B723004B73C2 /* Products */;
+			mainGroup = 750B9967286FA31E00349BA6;
+			productRefGroup = 750B9971286FA31E00349BA6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				75F833702852B723004B73C2 /* Password */,
+				750B996F286FA31E00349BA6 /* Sandbox */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		75F8336F2852B723004B73C2 /* Resources */ = {
+		750B996E286FA31E00349BA6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F833812852B727004B73C2 /* LaunchScreen.storyboard in Resources */,
-				75F8337E2852B727004B73C2 /* Assets.xcassets in Resources */,
+				750B9980286FA32100349BA6 /* LaunchScreen.storyboard in Resources */,
+				750B997D286FA32100349BA6 /* Assets.xcassets in Resources */,
+				750B997B286FA31E00349BA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		75F8336D2852B723004B73C2 /* Sources */ = {
+		750B996C286FA31E00349BA6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F833792852B723004B73C2 /* ViewController.swift in Sources */,
-				754C156E2873A50200A25C89 /* PasswordCriteria.swift in Sources */,
-				75F833752852B723004B73C2 /* AppDelegate.swift in Sources */,
-				7518F5BE286A6281003BA3EC /* PasswordCriteriaView.swift in Sources */,
-				75AFD04F286D027800445D8B /* PasswordStatusView.swift in Sources */,
-				75B44B6B2853E10900140385 /* PasswordTextField.swift in Sources */,
+				750B9978286FA31E00349BA6 /* ViewController.swift in Sources */,
+				750B9974286FA31E00349BA6 /* AppDelegate.swift in Sources */,
+				750B9976286FA31E00349BA6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		75F8337F2852B727004B73C2 /* LaunchScreen.storyboard */ = {
+		750B9979286FA31E00349BA6 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				75F833802852B727004B73C2 /* Base */,
+				750B997A286FA31E00349BA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		750B997E286FA32100349BA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				750B997F286FA32100349BA6 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -182,7 +166,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		75F833832852B727004B73C2 /* Debug */ = {
+		750B9982286FA32100349BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -243,7 +227,7 @@
 			};
 			name = Debug;
 		};
-		75F833842852B727004B73C2 /* Release */ = {
+		750B9983286FA32100349BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -298,7 +282,7 @@
 			};
 			name = Release;
 		};
-		75F833862852B727004B73C2 /* Debug */ = {
+		750B9985286FA32100349BA6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -307,10 +291,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VM55LWG8PP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Password/Info.plist;
+				INFOPLIST_FILE = Sandbox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -318,7 +302,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elizeurs.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elizeurs.Sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -326,7 +310,7 @@
 			};
 			name = Debug;
 		};
-		75F833872852B727004B73C2 /* Release */ = {
+		750B9986286FA32100349BA6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -335,10 +319,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VM55LWG8PP;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Password/Info.plist;
+				INFOPLIST_FILE = Sandbox/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,7 +330,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.elizeurs.Password;
+				PRODUCT_BUNDLE_IDENTIFIER = com.elizeurs.Sandbox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -357,25 +341,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		75F8336C2852B723004B73C2 /* Build configuration list for PBXProject "Password" */ = {
+		750B996B286FA31E00349BA6 /* Build configuration list for PBXProject "Sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75F833832852B727004B73C2 /* Debug */,
-				75F833842852B727004B73C2 /* Release */,
+				750B9982286FA32100349BA6 /* Debug */,
+				750B9983286FA32100349BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75F833852852B727004B73C2 /* Build configuration list for PBXNativeTarget "Password" */ = {
+		750B9984286FA32100349BA6 /* Build configuration list for PBXNativeTarget "Sandbox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				75F833862852B727004B73C2 /* Debug */,
-				75F833872852B727004B73C2 /* Release */,
+				750B9985286FA32100349BA6 /* Debug */,
+				750B9986286FA32100349BA6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 75F833692852B723004B73C2 /* Project object */;
+	rootObject = 750B9968286FA31E00349BA6 /* Project object */;
 }
