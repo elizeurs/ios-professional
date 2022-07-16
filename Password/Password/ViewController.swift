@@ -30,6 +30,7 @@ extension ViewController {
     setupNewPassword()
     setupConfirmPassword()
     setupDismissKeyboardGesture()
+    setupKeyboardHiding()
   }
   
 //  typealias CustomValidation = (_ textValue: String?) -> (Bool, String)?
@@ -44,7 +45,7 @@ extension ViewController {
       }
       
       // valid characters
-      let validChars = "abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ01234567890"
+      let validChars = "abcdefghijklmnopqrstuvxyzABCDEFGHIJKLMNOPQRSTUVXYZ01234567890.,@:?!()$\\/#"
       let invalidSet = CharacterSet(charactersIn: validChars).inverted
       guard text.rangeOfCharacter(from: invalidSet) == nil else {
         self.statusView.reset()
@@ -91,6 +92,12 @@ extension ViewController {
     view.endEditing(true) // resign  first responder
   }
   
+  // hide and show keyboard
+  private func setupKeyboardHiding() {
+    NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector (keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+  }
+  
   func style() {
     stackView.translatesAutoresizingMaskIntoConstraints = false
     stackView.axis = .vertical
@@ -109,7 +116,7 @@ extension ViewController {
     resetButton.translatesAutoresizingMaskIntoConstraints = false
     resetButton.configuration = .filled()
     resetButton.setTitle("Reset password", for: [])
-//    resetButton.addTarget(self, action: #selector(resetPasswordButtonTapped), for: .primaryActionTriggered)
+    resetButton.addTarget(self, action: #selector(resetPasswordButtonTapped), for: .primaryActionTriggered)
   }
   
   func layout() {
@@ -151,5 +158,64 @@ extension ViewController: PasswordTextFieldDelegate {
       _ = confirmPasswordTextField.validate()
     }
   }
+}
+
+// MARK: keyboard
+extension ViewController {
+  @objc func keyboardWillShow(sender: NSNotification) {
+//    view.frame.origin.y = view.frame.origin.y - 200
+    guard let userInfo = sender.userInfo,
+    let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue,
+    let currentTextField = UIResponder.currentFirst() as? UITextField else { return }
+    
+//    print("foo - userInfo: \(userInfo)")
+    print("foo - keyboardFrame: \(keyboardFrame)")
+//    print("foo - currentTextField: \(currentTextField)")
+    
+    // check if the top of the keyboard is above the bottom of the currently focused textbox
+    let keyboardTopY = keyboardFrame.cgRectValue.origin.y
+    let convertedTextFieldFrame = view.convert(currentTextField.frame, from: currentTextField.superview)
+    let textFieldBottomY = convertedTextFieldFrame.origin.y +  convertedTextFieldFrame.size.height
+    
+//    if textField bottom is below keyboard bottom - bump the frame up
+    if textFieldBottomY > keyboardTopY {
+      // adjust view up
+//      print("Adjust view!")
+      let textBoxY = convertedTextFieldFrame.origin.y
+      let newFrameY = (textBoxY - keyboardTopY / 2) * -1
+      view.frame.origin.y = newFrameY
+    }
+//    print("foo - currentTextFieldFrame: \(currentTextField.frame)")
+//    print("foo - convertedTextFieldFrame: \(convertedTextFieldFrame)")
+  }
+  
+  @objc func keyboardWillHide(sender: NSNotification) {
+    view.frame.origin.y = 0
+  }
+}
+
+// MARK: - Actions
+extension ViewController {
+  
+  @objc func resetPasswordButtonTapped(sender: UIButton) {
+    view.endEditing(true)
+    
+    let isValidNewPassword = newPasswordTextField.validate()
+    let isValidConfirmPassword = confirmPasswordTextField.validate()
+    
+    if isValidNewPassword  && isValidConfirmPassword {
+      showAlert(title: "Success", message: "You have successfully changed your password.")
+    }
+  }
+        
+        private func showAlert(title: String, message: String) {
+          let alert = UIAlertController(title: "", message: "", preferredStyle: .alert)
+          alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+          alert.title = title
+          
+          alert.title = title
+          alert.message = message
+          present(alert, animated: true, completion: nil)
+        }
 }
 
