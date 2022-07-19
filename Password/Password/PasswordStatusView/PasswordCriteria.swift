@@ -12,12 +12,12 @@ struct PasswordCriteria {
     text.count >= 8 && text.count <= 32
   }
   
-  static func noSpaceCriteria(_ text: String) -> Bool {
+  static func noSpaceCriteriaMet(_ text: String) -> Bool {
     text.rangeOfCharacter(from: NSCharacterSet.whitespaces) == nil
   }
   
   static func lengthAndNoSpaceMet(_ text: String) -> Bool {
-    lengthCriteriaMet(text) && noSpaceCriteria(text)
+    lengthCriteriaMet(text) && noSpaceCriteriaMet(text)
   }
   
   static func uppercaseMet(_ text: String) -> Bool {
